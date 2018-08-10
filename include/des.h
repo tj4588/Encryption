@@ -22,8 +22,8 @@ namespace encryption
       
       ~DES() = default;
       
-      std::string Encrypt (std::string cipherText);
-      std::string Decrypt (std::string cipherText);
+      std::vector<std::bitset<12>> Encrypt (std::string cipherText);
+      std::vector<std::bitset<12>> Decrypt (std::vector<std::bitset<12>> text);
     private:
    
       std::vector<std::bitset<8>> key_round_;
