@@ -21,7 +21,7 @@ int main (int argc, char **argv)
     myfile.close();
   }
 
-  DES des(std::bitset<9>("111000111"));
+  DES des(std::bitset<9>("000000000"));
   std::vector<bitset<12>> e;
   e = des.Encrypt(cipher);
   
